@@ -1,0 +1,111 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background: #007BFF; /* Color azul */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Formulario de inicio de sesión */
+form {
+    background: #fff;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="textarea"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form .button-group {
+    text-align: center; /* Centrar los botones */
+    display: flex; /* Usar flexbox para alinear horizontalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+form input[type="submit"],
+form button {
+    width: 45%;
+    margin: 10px 5px; /* Ajustar margen para separación */
+}
+
+form input[type="submit"] {
+    background: #28a745; /* Color verde para el botón Actualizar Alumno */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+form input[type="submit"]:hover {
+    background: #218838; /* Color verde más oscuro al pasar el mouse */
+}
+
+form button {
+    background: #dc3545; /* Color rojo para el botón VOLVER */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+form button:hover {
+    background: #c82333; /* Color rojo más oscuro al pasar el mouse */
+}
+
+/* Estilos responsivos para pantallas de hasta 480px */
+@media (max-width: 480px) {
+    form .button-group {
+        flex-direction: column; /* Cambiar a columna en modo responsive */
+    }
+
+    form input[type="submit"],
+    form button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Mensajes de error */
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+input[readonly] {
+    background-color: #f0f0f0; /* Color gris claro */
+    color: #666; /* Color del texto */
+    border: 1px solid #ccc; /* Borde gris */
+}

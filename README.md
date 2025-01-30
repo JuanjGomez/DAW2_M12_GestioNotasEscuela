@@ -1,2 +1,2 @@
-# DAW2_M12_GestioNotasEscuela
-Extension de escuelas para poder administrar notas.
+# Gesti--Notes
+Gestio-Notes. Grupo: Àngel, Juanjo, Oscar, David

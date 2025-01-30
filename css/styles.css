@@ -1,0 +1,244 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    overflow-y: auto;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #5b97d7;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: white;
+}
+
+.navbar .btn {
+    margin: 5px 0;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.navbar .btn:hover {
+    background-color: #c82333;
+}
+
+/* Contenedor de búsqueda */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.search-form label {
+    margin-right: 5px;
+}
+
+.search-form input {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.search-form button:last-child {
+    background-color: #dc3545;
+}
+
+.search-form button:hover {
+    background-color: #218838;
+}
+
+.search-form button:last-child:hover {
+    background-color: #c82333;
+}
+
+/* Estilos específicos para la página de gestión de usuarios */
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.buttons-container a {
+    margin: 10px;
+}
+
+.buttons-container .btn-success,
+.buttons-container .btn-info {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+.buttons-container .btn-success:hover,
+.buttons-container .btn-info:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 90%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #5b97d7;
+    color: white;
+}
+
+td.email {
+    display: table-cell;
+}
+
+/* Enlaces de acción en la tabla */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center;      /* Centra verticalmente los elementos */
+    margin: 20px 0;
+    padding: 10px 0;          /* Opcional, para añadir más espacio entre los botones y la tabla */
+}
+
+.pagination a {
+    margin: 0 5px;            /* Espacio entre los enlaces */
+    padding: 5px 10px;        /* Espaciado dentro de los botones */
+    border: 1px solid #007BFF;
+    color: #007BFF;
+    border-radius: 4px;
+    text-align: center;       /* Centra el texto en el botón */
+    text-decoration: none;    /* Elimina el subrayado */
+}
+
+.pagination a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.pagination strong {
+    margin: 0 5px;            /* Espacio para el número de página actual */
+    padding: 5px 10px;
+    color: #007BFF;
+    font-weight: bold;        /* Asegúrate de resaltar la página actual */
+}
+
+#logo {
+    max-width: 50px;
+    height: auto;
+}
+
+/* Control de paginación */
+.pagination-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Media Queries para dispositivos móviles */
+/* Media Queries para dispositivos móviles */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-form {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .search-form label {
+        display: none; /* Ocultar labels en dispositivos móviles */
+    }
+
+    .search-form input {
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .search-form button {
+        margin-bottom: 0;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons-container a {
+        margin: 10px 0;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th.email, td.email {
+        display: none !important; /* Asegurar que el campo de correo electrónico esté oculto */
+    }
+
+    .pagination-control {
+        flex-direction: column;
+        align-items: center;
+    }
+}
